@@ -1,12 +1,6 @@
-/* BASE STYLES
+/* CSS
 ============================================================================= */
 html         { overflow-y:hidden; }
-#animal{
-  font-size: 70px;
-  margin: 30px;
-  color: #424242;
-}
-
 .colorPicker {
   margin-top: 1em;
   font-size: 0.875em;
@@ -125,16 +119,21 @@ html         { overflow-y:hidden; }
 .page a     { margin-top:50px; }
 #about      { color:#333; position:absolute; text-align:center; top:50px; width:100%; }
 
+#animal{
+  height: 320px;
+  margin: 0px;
+}
+
 /* PAGES
 ============================================================================= */
-.page-one 		{ background:#58ACFA; color:#585858; }
-.page-two 		{ background:#F781D8; color:#585858; }
-.page-three 		{ background:#DA81F5; color:#585858; }
-.page-four 		{ background:#9F81F7; color:#585858; }
-.page-five 		{ background:#81DAF5; color:#585858; }
-.page-six 		{ background:#BEF781; color:#585858; }
-.page-seven 		{ background:#F5DA81; color:#585858; }
-.page-eight 		{ background:#F78181; color:#585858; }
+.page-one 		{ background:#58ACFA; background-image: url("../pics/logo.svg"); background-size: 80%; background-position: top; background-repeat: no-repeat; color:#585858; }
+.page-two 		{ background:#F781D8; background-image: url("../pics/logo.svg"); background-size: 20%; background-position: left top; background-repeat: no-repeat; color:#585858; }
+.page-three 		{ background:#DA81F5; background-image: url("../pics/logo.svg"); background-size: 20%; background-position: left top; background-repeat: no-repeat; color:#585858; }
+.page-four 		{ background:#9F81F7; background-image: url("../pics/logo.svg"); background-size: 20%; background-position: left top; background-repeat: no-repeat; color:#585858; }
+.page-five 		{ background:#81DAF5; background-image: url("../pics/logo.svg"); background-size: 20%; background-position: left top; background-repeat: no-repeat; color:#585858; }
+.page-six 		{ background:#BEF781; background-image: url("../pics/logo.svg"); background-size: 20%; background-position: left top; background-repeat: no-repeat; color:#585858; }
+.page-seven 		{ background:#F5DA81; background-image: url("../pics/logo.svg"); background-size: 20%; background-position: left top; background-repeat: no-repeat; color:#585858; }
+.page-eight 		{ background:#F78181; background-image: url("../pics/logo.svg"); background-size: 20%; background-position: left top; background-repeat: no-repeat; color:#585858; }
 
 /* ANIMATIONS
 ============================================================================= */

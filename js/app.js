@@ -1,6 +1,5 @@
 // app.js
 
-// define our application and pull in ngRoute and ngAnimate
 var animateApp = angular.module('animateApp', ['ngRoute', 'ngAnimate', 'ngMaterial', 'ngMessages']);
 
 // ROUTING ===============================================
@@ -91,9 +90,9 @@ animateApp.controller('sixController', function($scope) {
 });
 
 // page seven controller
-animateApp.controller('sevenController', function($scope) {
+animateApp.controller('sevenController', function ($scope){
     $scope.pageClass = 'page-seven';
-    var firstNames = ["Cat","Dog","Monkey","Mouse","Horse"];
+    var firstNames = ["<img src='pics/animal-01.png' height='400'/>", "<img src='pics/animal-02.png' height='400'/>", "<img src='pics/animal-03.png' height='400'/>", "<img src='pics/animal-04.png' height='400'/>", "<img src='pics/animal-05.png' height='400'/>", "<img src='pics/animal-06.png' height='400'/>", "<img src='pics/animal-07.png' height='400'/>", "<img src='pics/animal-08.png' height='400'/>", "<img src='pics/animal-09.png' height='400'/>", "<img src='pics/animal-10.png' height='400'/>"];
     var f = firstNames[Math.floor(Math.random()*firstNames.length)];
     document.getElementById("animal").innerHTML = f;
 });
@@ -102,25 +101,3 @@ animateApp.controller('sevenController', function($scope) {
 animateApp.controller('eightController', function($scope) {
     $scope.pageClass = 'page-eight';
 });
-
-// Collection
-
-UserList = new Mongo.Collection('users');
-
-if(Meteor.isClient){
-  Template.wpirfy.helpers({
-    'user': function(){
-      return UserList.find()
-    }
-  });
-
-  Template.addUserForm.events({
-    'submit form': function(event){
-      event.preventDefault();
-      var userNameVar = event.target.userName.value;
-      UserList.insert({
-        name: userNameVar
-      });
-    }
-  });
-}
